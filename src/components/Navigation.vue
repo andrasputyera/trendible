@@ -6,14 +6,22 @@
             </div>
             <div class="nav-links">
                 <ul>
-                    <router-link class="link" :to="#">Home</router-link>
-                    <router-link class="link" :to="#">Articles</router-link>
-                    <router-link class="link" :to="#">Create Post</router-link>
-                    <router-link class="link" :to="#">Login/Register</router-link>
+                    <router-link class="link" to="#">Home</router-link>
+                    <router-link class="link" to="#">Articles</router-link>
+                    <router-link class="link" to="#">Create Post</router-link>
+                    <router-link class="link" to="#">Login/Register</router-link>
                 </ul>
             </div>
         </nav>
         <menuIcon/>
+        <transition name="mobile-nav">
+            <ul>
+                <router-link class="link" to="#">Home</router-link>
+                <router-link class="link" to="#">Articles</router-link>
+                <router-link class="link" to="#">Create Post</router-link>
+                <router-link class="link" to="#">Login/Register</router-link>
+            </ul>
+        </transition>
     </header>
 </template>
 
@@ -47,7 +55,19 @@ header {
 
     nav {
         display: flex;
-        align-items: center;
+        padding: 25px 0;
+
+        .branding {
+            display: flex;
+            align-items: center;
+
+            .header {
+                font-weight: 600;
+                font-size: 24px;
+                color: #000;
+                text-decoration: none;
+            }
+        }
     }
 }
 </style>
