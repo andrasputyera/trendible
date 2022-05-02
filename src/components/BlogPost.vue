@@ -34,14 +34,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.blog-wrapper {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  @media (min-width: 700px) {
-    min-height: 650px;
-    max-height: 650px;
-    flex-direction: row;
+  .blog-wrapper {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    @media (min-width: 700px) {
+        min-height: 650px;
+        max-height: 650px;
+        flex-direction: row;
   }
 
   .blog-content {
@@ -76,7 +76,7 @@ export default {
           }
 
           p {
-            font-size: 32px;
+            font-size: 15px;
             font-weight: 300;
             line-height: 1.7;
           }
@@ -114,6 +114,23 @@ export default {
   .blog-photo {
       order: 1;
       flex: 3;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+      @media (min-width: 700px) {
+            order: 2;
+        }
+
+      @media (min-width: 800px) {
+            flex: 4;
+        }
+        
+      
+      img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
   }
 }
 
