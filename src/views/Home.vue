@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import BlogPost from '@/components/BlogPost'
+import BlogPost from '../components/BlogPost.vue'
 
 export default {
   name: "Home",
@@ -23,12 +23,12 @@ export default {
         {
           title: "This is a Filler Title!",
           blogHTML: "This is filler blog post title!",
-          blogCoverPhotos: "beautiful-stories"
+          blogCoverPhoto: "beautiful-stories"
         },
         {
           title: "This is a Filler Title!",
           blogHTML: "This is filler blog post title!",
-          blogCoverPhotos: "designed-for-everyone"
+          blogCoverPhoto: "designed-for-everyone"
         }
       ]
     }
